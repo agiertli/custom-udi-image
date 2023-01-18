@@ -4,7 +4,7 @@ metadata:
 components:
   - name: tools
     container:
-      image: image-registry.openshift-image-registry.svc.cluster.local:5000/custom-udi-image/custom-udi-image:latest
+      image: quay.io/agiertli/custom-udi-image:latest
       memoryLimit: 3Gi
       endpoints:
         - exposure: public
