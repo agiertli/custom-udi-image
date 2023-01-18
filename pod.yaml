@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
   - name: tools-container
-    image: custom-udi-image:latest
+    image: image-registry.openshift-image-registry.svc.cluster.local:5000/custom-udi-image/custom-udi-image:latest
