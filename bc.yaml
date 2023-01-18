@@ -1,0 +1,18 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  name: custom-udi-image
+  labels:
+    app: custom-udi-image
+spec:
+  source:
+    type: Git
+    git:
+      uri: https://github.com/agiertli/custom-udi-image
+      ref: main
+  strategy:
+    type: Docker
+  output:
+    to:
+      kind: ImageStreamTag
+      name: custom-udi-image:latest

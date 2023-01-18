@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tools
+spec:
+  containers:
+  - name: tools-container
+    image: custom-udi-image:latest
