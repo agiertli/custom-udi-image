@@ -4,7 +4,7 @@ metadata:
 components:
   - name: tools
     container:
-      image: quay.io/agiertli/custom-udi-image:latest
+      image: quay.io/agiertli/custom-udi-image:chgrp
       memoryLimit: 3Gi
       endpoints:
         - exposure: public
